@@ -4,7 +4,10 @@
     Author     : user
 --%>
 
+<%@page import="br.com.controle.Prato"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
+<%@page import="java.util.List"%>
+<%@page import="br.com.controle.Prato"%> 
 <!DOCTYPE html>
 <html>
     <head>
@@ -18,7 +21,7 @@
     </head>
     <body>
         
-         <!-- Navbar -->
+        <!-- Navbar -->
         <header>
             <!-- Links --> 
             <div class="container">
@@ -32,228 +35,111 @@
                 </div>
             </div>
         </header>
-        
+
+        <%-- Recupera a lista de pratos da requisição --%>
+        <%
+            List<Prato> pratos = (List<Prato>) request.getAttribute("pratos");
+        %>
+
         <!-- Entradas -->
         <section id="entradas" class="section">
             <div class="content">
                 <h2>Entradas</h2>
                 <div class="products-container">
-                    <!-- Subopções de reservas para Cafeterias -->
-                    <div class="box">
-                        <div class="box-content">
-                            <img src="https://plus.unsplash.com/premium_photo-1693237028550-649978657ec7?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Croissant recheado">
-                            <div class="description">
-                                <h3>Croissant Recheado</h3>
-                                <span>A salada caprese, oferecida como entrada, é feita com tomates frescos, mussarela, manjericão e temperada com azeite e sal. É uma opção leve e saborosa para começar a refeição.  <br>R$56,00
-                                </span>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    
-                    
-                    <div class="box">
-                        <div class="box-content">
-                            <img src="https://images.unsplash.com/photo-1676300184943-09b2a08319a3?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Creme Brulee">
-                            <div class="description">
-                                <h3>Creme Brulee</h3>
-                                <span>A salada caprese, oferecida como entrada, é feita com tomates frescos, mussarela, manjericão e temperada com azeite e sal. É uma opção leve e saborosa para começar a refeição.</span>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    
-                    <div class="box">
-                        <div class="box-content">
-                            <img src="https://images.unsplash.com/photo-1570197571499-166b36435e9f?q=80&w=1412&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Salada Caprese">
-                            <div class="description">
-                                <h3>Salada Caprese</h3>
-                                <span>A salada caprese, oferecida como entrada, é feita com tomates frescos, mussarela, manjericão e temperada com azeite e sal. É uma opção leve e saborosa para começar a refeição.</span>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    
-                    
-                    <div class="box">
-                        <div class="box-content">
-                            <img src="https://plus.unsplash.com/premium_photo-1667663175869-db111748c3c7?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Tábua de Frios">
-                            <div class="description">
-                                <h3>Tábua de frios</h3>
-                                <span>A salada caprese, oferecida como entrada, é feita com tomates frescos, mussarela, manjericão e temperada com azeite e sal. É uma opção leve e saborosa para começar a refeição.</span>
-                            </div>
-                        </div>
-                    </div>
-                    
+                    <% if (pratos != null) { 
+                        for (Prato prato : pratos) { 
+                            if (prato.getCategoria().equalsIgnoreCase("Entrada")) { %>
+                                <div class="box">
+                                    <div class="box-content">
+                                        <img src="<%= prato.getNomePrato()%>" alt="<%= prato.getNomePrato()%>">
+                                        <div class="description">
+                                            <h3><%= prato.getNomePrato() %></h3>
+                                            <span><%= prato.getDescricao() %></span>
+                                            <p>Preço: R$ <%= prato.getPreco() %></p>
+                                        </div>
+                                    </div>
+                                </div>
+                    <%      } 
+                        } 
+                    } %>
                 </div>
             </div>
         </section>
-        
-         <!-- Pratos Pincipais -->
+
+        <!-- Pratos Principais -->
         <section id="pratosprincipais" class="section">
             <div class="content">
                 <h2>Pratos Principais</h2>
                 <div class="products-container">
-                    <!-- Subopções de pratos principais -->
-                   
-         <div class="box">
-                        <div class="box-content">
-                            <img src="https://images.unsplash.com/photo-1570197571499-166b36435e9f?q=80&w=1412&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Salada Caprese">
-                            <div class="description">
-                                <h3>Salada Caprese</h3>
-                                <span>A salada caprese, oferecida como entrada, é feita com tomates frescos, mussarela, manjericão e temperada com azeite e sal. É uma opção leve e saborosa para começar a refeição.</span>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    
-                    
-                    <div class="box">
-                        <div class="box-content">
-                            <img src="https://images.unsplash.com/photo-1676300184943-09b2a08319a3?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Salada Caprese">
-                            <div class="description">
-                                <h3>Creme Brulee</h3>
-                                <span>A salada caprese, oferecida como entrada, é feita com tomates frescos, mussarela, manjericão e temperada com azeite e sal. É uma opção leve e saborosa para começar a refeição. </span>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    
-                    <div class="box">
-                        <div class="box-content">
-                            <img src="https://images.unsplash.com/photo-1570197571499-166b36435e9f?q=80&w=1412&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Salada Caprese">
-                            <div class="description">
-                                <h3>Salada Caprese</h3>
-                                <span>A salada caprese, oferecida como entrada, é feita com tomates frescos, mussarela, manjericão e temperada com azeite e sal. É uma opção leve e saborosa para começar a refeição.</span>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    
-                    
-                    <div class="box">
-                        <div class="box-content">
-                            <img src="https://images.unsplash.com/photo-1570197571499-166b36435e9f?q=80&w=1412&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Salada Caprese">
-                            <div class="description">
-                                <h3>Salada Caprese</h3>
-                                <span>A salada caprese, oferecida como entrada, é feita com tomates frescos, mussarela, manjericão e temperada com azeite e sal. É uma opção leve e saborosa para começar a refeição.</span>
-                            </div>
-                        </div>
-                    </div>
-                    
+                    <% if (pratos != null) { 
+                        for (Prato prato : pratos) { 
+                            if (prato.getCategoria().equalsIgnoreCase("prato principal")) { %>
+                                <div class="box">
+                                    <div class="box-content">
+                                        <img src="<%= prato.getIdPrato()%>" alt="<%= prato.getNomePrato() %>">
+                                        <div class="description">
+                                            <h3><%= prato.getNomePrato() %></h3>
+                                            <span><%= prato.getDescricao() %></span>
+                                            <p>Preço: R$ <%= prato.getPreco() %></p>
+                                        </div>
+                                    </div>
+                                </div>
+                    <%      } 
+                        } 
+                    } %>
                 </div>
-        
-                
-                <!-- Sobremesas -->
+            </div>
+        </section>
+
+        <!-- Sobremesas -->
         <section id="sobremesas" class="section">
             <div class="content">
-                <h2>Sobremesas </h2>
+                <h2>Sobremesas</h2>
                 <div class="products-container">
-                    <!-- Subopções de sobremesas -->
-                   
-         <div class="box">
-                        <div class="box-content">
-                            <img src="https://images.unsplash.com/photo-1570197571499-166b36435e9f?q=80&w=1412&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Salada Caprese">
-                            <div class="description">
-                                <h3>Salada Caprese</h3>
-                                <span>A salada caprese, oferecida como entrada, é feita com tomates frescos, mussarela, manjericão e temperada com azeite e sal. É uma opção leve e saborosa para começar a refeição.</span>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    
-                    
-                    <div class="box">
-                        <div class="box-content">
-                            <img src="https://images.unsplash.com/photo-1676300184943-09b2a08319a3?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Salada Caprese">
-                            <div class="description">
-                                <h3>Creme Brulee</h3>
-                                <span>A salada caprese, oferecida como entrada, é feita com tomates frescos, mussarela, manjericão e temperada com azeite e sal. É uma opção leve e saborosa para começar a refeição.</span>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    
-                    <div class="box">
-                        <div class="box-content">
-                            <img src="https://images.unsplash.com/photo-1570197571499-166b36435e9f?q=80&w=1412&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Salada Caprese">
-                            <div class="description">
-                                <h3>Salada Caprese</h3>
-                                <span>A salada caprese, oferecida como entrada, é feita com tomates frescos, mussarela, manjericão e temperada com azeite e sal. É uma opção leve e saborosa para começar a refeição.</span>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    
-                    
-                    <div class="box">
-                        <div class="box-content">
-                            <img src="https://images.unsplash.com/photo-1570197571499-166b36435e9f?q=80&w=1412&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Salada Caprese">
-                            <div class="description">
-                                <h3>Salada Caprese</h3>
-                                <span>A salada caprese, oferecida como entrada, é feita com tomates frescos, mussarela, manjericão e temperada com azeite e sal. É uma opção leve e saborosa para começar a refeição.</span>
-                            </div>
-                        </div>
-                    </div>
-                    
+                    <% if (pratos != null) { 
+                        for (Prato prato : pratos) { 
+                            if (prato.getCategoria().equalsIgnoreCase("Sobremesa")) { %>
+                                <div class="box">
+                                    <div class="box-content">
+                                        <img src="<%= prato.getNomePrato()%>" alt="<%= prato.getNomePrato()%>">
+                                        <div class="description">
+                                            <h3><%= prato.getNomePrato()%></h3>
+                                            <span><%= prato.getDescricao() %></span>
+                                            <p>Preço: R$ <%= prato.getPreco() %></p>
+                                        </div>
+                                    </div>
+                                </div>
+                    <%      } 
+                        } 
+                    } %>
                 </div>
-        
-                
-                   
-                <!-- Bebidas -->
+            </div>
+        </section>
+
+        <!-- Bebidas -->
         <section id="bebidas" class="section">
             <div class="content">
-                <h2>Bebidas </h2>
+                <h2>Bebidas</h2>
                 <div class="products-container">
-                    <!-- Subopções de sobremesas -->
-                   
-         <div class="box">
-                        <div class="box-content">
-                            <img src="https://images.unsplash.com/photo-1570197571499-166b36435e9f?q=80&w=1412&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Salada Caprese">
-                            <div class="description">
-                                <h3>Salada Caprese</h3>
-                                <span>A salada caprese, oferecida como entrada, é feita com tomates frescos, mussarela, manjericão e temperada com azeite e sal. É uma opção leve e saborosa para começar a refeição.</span>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    
-                    
-                    <div class="box">
-                        <div class="box-content">
-                            <img src="https://images.unsplash.com/photo-1676300184943-09b2a08319a3?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Salada Caprese">
-                            <div class="description">
-                                <h3>Creme Brulee</h3>
-                                <span>A salada caprese, oferecida como entrada, é feita com tomates frescos, mussarela, manjericão e temperada com azeite e sal. É uma opção leve e saborosa para começar a refeição.</span>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    
-                    <div class="box">
-                        <div class="box-content">
-                            <img src="https://images.unsplash.com/photo-1570197571499-166b36435e9f?q=80&w=1412&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Salada Caprese">
-                            <div class="description">
-                                <h3>Salada Caprese</h3>
-                                <span>A salada caprese, oferecida como entrada, é feita com tomates frescos, mussarela, manjericão e temperada com azeite e sal. É uma opção leve e saborosa para começar a refeição.</span>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    
-                    
-                    <div class="box">
-                        <div class="box-content">
-                            <img src="https://images.unsplash.com/photo-1570197571499-166b36435e9f?q=80&w=1412&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Salada Caprese">
-                            <div class="description">
-                                <h3>Salada Caprese</h3>
-                                <span>A salada caprese, oferecida como entrada, é feita com tomates frescos, mussarela, manjericão e temperada com azeite e sal. É uma opção leve e saborosa para começar a refeição.</span>
-                            </div>
-                        </div>
-                    </div>
-                    
+                    <% if (pratos != null) { 
+                        for (Prato prato : pratos) { 
+                            if (prato.getCategoria().equalsIgnoreCase("Bebida")) { %>
+                                <div class="box">
+                                    <div class="box-content">
+                                        <img src="<%= prato.getNomePrato() %>" alt="<%= prato.getNomePrato() %>">
+                                        <div class="description">
+                                            <h3><%= prato.getNomePrato() %></h3>
+                                            <span><%= prato.getDescricao() %></span>
+                                            <p>Preço: R$ <%= prato.getPreco() %></p>
+                                        </div>
+                                    </div>
+                                </div>
+                    <%      } 
+                        } 
+                    } %>
                 </div>
-        
-        
+            </div>
+        </section>
     </body>
 </html>
+

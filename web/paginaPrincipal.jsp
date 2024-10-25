@@ -69,7 +69,7 @@
                             <div class="description">
                                 <h3>La Bossue</h3>
                                 <span>A Cafeteria La Bussue é um café delicado e acolhedor no centro da cidade. Oferece uma variedade de bebidas quentes, lanches e sobremesas deliciosas. A equipe é simpática e atenciosa, proporcionando uma atmosfera relaxante para os clientes desfrutarem.</span>
-                                <p><a href="paginaCardapio.jsp?local=La%20Bossue&imagem=https://images.unsplash.com/photo-1581683705068-ca8f49fc7f45?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="reservation-link">Reservar</a></p> 
+                                <p><a href="paginaReservar.jsp?local=La%20Bossue&imagem=https://images.unsplash.com/photo-1581683705068-ca8f49fc7f45?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&id=1" class="reservation-link">Reservar</a></p> 
                             </div>
                         </div>
                     </div>
@@ -79,8 +79,7 @@
                             <img src="https://images.unsplash.com/photo-1602594323720-79b579e4d20e?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Descrição da imagem">
                             <h3>Patissier</h3>
                             <span>A Cafeteria Patissier é um destino irresistível para os amantes de doces, oferecendo uma variedade de sobremesas finas e deliciosas, criadas com maestria por patissiers talentosos.</span>
-                            <!-- <a href="paginaReservar.jsp?local=Patissier&imagem=https://images.unsplash.com/photo-1602594323720-79b579e4d20e?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="reservation-link">Reservar</a></p> --> 
-                            <p>  <a href="paginaHistoricoPedidos.jsp" class="reservation-link">Reservar</a></p>
+                          <p>  <a href="paginaReservar.jsp?local=Patissier&imagem=https://images.unsplash.com/photo-1602594323720-79b579e4d20e?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&id=2" class="reservation-link">Reservar</a></p>
                         </div>
                     </div>
                     <div class="box">
@@ -89,8 +88,7 @@
                             <img src="https://images.unsplash.com/photo-1570038281437-550322a86cb8?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Descrição da imagem">
                             <h3>Casa francesa</h3>
                             <span>A Casa Francesa é um elegante café que oferece uma autêntica experiência francesa, com uma variedade de delícias culinárias inspiradas na gastronomia francesa clássica.</span>
-                            <!-- comment  <p> <a href="paginaReservar.jsp?local=Casa%20francesa&imagem=https://images.unsplash.com/photo-1570038281437-550322a86cb8?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="reservation-link" >Reservar</a></p>--> 
-                             <p>  <a href="paginaPacoteHoteis.jsp" class="reservation-link">Reservar</a></p>
+                           <p> <a href="paginaReservar.jsp?local=Casa%20francesa&imagem=https://images.unsplash.com/photo-1570038281437-550322a86cb8?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&id=3" class="reservation-link" >Reservar</a></p>
                         </div>
                     </div>
                     <div class="box">
@@ -99,7 +97,7 @@
                             <img src="https://images.unsplash.com/photo-1591261730799-ee4e6c2d16d7?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Descrição da imagem">
                             <h3>Café Bilhares</h3>
                             <span>O Café Bilhares é um espaço único que combina o prazer de jogar bilhar com a experiência de desfrutar de bebidas e petiscos deliciosos em um ambiente descontraído e acolhedor.</span>
-                           <p> <a href="paginaReservar.jsp?local=Café%20Bilhares&imagem=https://images.unsplash.com/photo-1591261730799-ee4e6c2d16d7?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="reservation-link">Reservar</a></p>
+                           <p> <a href="paginaReservar.jsp?local=Café%20Bilhares&imagem=https://images.unsplash.com/photo-1591261730799-ee4e6c2d16d7?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&id=4" class="reservation-link">Reservar</a></p>
                         </div>
                     </div>
                 </div>
@@ -115,10 +113,10 @@
                     <div class="box">
                         
                         <div class="box-content">
-                            <img src="https://images.unsplash.com/photo-1554647286-f365d7defc2d?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D "alt="Descrição da imagem">
+                            <img src="https://images.unsplash.com/photo-1554647286-f365d7defc2d?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3Did "alt="Descrição da imagem">
                             <h3>Hotel Lux</h3>
                             <span>O Hotel Lux oferece uma experiência de hospedagem luxuosa e sofisticada, com acomodações elegantes, serviços de classe mundial e uma localização privilegiada para uma estadia memorável.</span>
-                          <p>  <a href="paginaReservar.jsp?local=Hotel%20Lux&imagem=https://images.unsplash.com/photo-1554647286-f365d7defc2d?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D "class="reservation-link">Reservar</a></p>
+                          <p>  <a href="paginaReservar.jsp?local=Hotel%20Lux&imagem=https://images.unsplash.com/photo-1554647286-f365d7defc2d?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&id=5 "class="reservation-link">Reservar</a></p>
                         </div>
                     </div>
                     <div class="box">
@@ -127,7 +125,7 @@
                             <img src="https://images.unsplash.com/photo-1600011689032-8b628b8a8747?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Descrição da imagem">
                             <h3>Hotel Marítimo</h3>
                             <span>O Hotel Marítimo oferece uma estadia relaxante à beira-mar, com vistas deslumbrantes, acomodações confortáveis e uma variedade de comodidades para uma experiência de hospedagem memorável.</span>
-                            <p><a href="paginaReservar.jsp?local=Hotel%20Marítimo&imagem=https://images.unsplash.com/photo-1600011689032-8b628b8a8747?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="reservation-link">Reservar</a></p>
+                            <p><a href="paginaReservar.jsp?local=Hotel%20Marítimo&imagem=https://images.unsplash.com/photo-1600011689032-8b628b8a8747?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&id=6" class="reservation-link">Reservar</a></p>
                         </div>
                     </div>
                     <div class="box">
@@ -136,7 +134,7 @@
                             <img src="https://images.unsplash.com/photo-1573052905904-34ad8c27f0cc?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Descrição da imagem">
                             <h3>Horizonte Sereno</h3>
                             <span>Hotel conceitual que promete uma experiência de hospedagem relaxante e revigorante. Ele transmite uma sensação de calma e paz, convidando os hóspedes a desfrutarem de uma estadia tranquila e rejuvenescedora.</span>
-                           <p> <a href="paginaReservar.jsp?local=Horizonte%20Sereno&imagem=https://images.unsplash.com/photo-1573052905904-34ad8c27f0cc?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="reservation-link">Reservar</a></p>
+                           <p> <a href="paginaReservar.jsp?local=Horizonte%20Sereno&imagem=https://images.unsplash.com/photo-1573052905904-34ad8c27f0cc?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&id=7" class="reservation-link">Reservar</a></p>
                         </div>
                     </div>
                     <div class="box">
@@ -145,7 +143,7 @@
                             <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Descrição da imagem">
                             <h3>Praia Resort</h3>
                             <span>uma estadia relaxante e tranquila à beira-mar, onde os hóspedes podem desfrutar da serenidade da praia enquanto são mimados com serviços de resort.</span>
-                            <p><a href="paginaReservar.jsp?local=Praia%20Resort&imagem=https://images.unsplash.com/photo-1566073771259-6a8506099945?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="reservation-link">Reservar</a></p>
+                            <p><a href="paginaReservar.jsp?local=Praia%20Resort&imagem=https://images.unsplash.com/photo-1566073771259-6a8506099945?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&id=8" class="reservation-link">Reservar</a></p>
                         </div>
                     </div>
                 </div>
@@ -209,7 +207,7 @@
                             <img src="https://images.unsplash.com/photo-1558028023-1989e72878ed?q=80&w=1372&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Descrição da imagem">
                             <h3>Gastrobar Fusion</h3>
                             <span>Experimente uma fusão irresistível de sabores no nosso Gastrobar Fusion, onde pratos e coquetéis inovadores se encontram para uma experiência gastronômica única e memorável.</span>
-                          <p>  <a href="paginaReservar.jsp?local=Gastrobar%20Fusion&imagem=https://images.unsplash.com/photo-1558028023-1989e72878ed?q=80&w=1372&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="reservation-link" data-local="Gastrobar Fusion">Reservar</a></p>
+                          <p>  <a href="paginaReservar.jsp?local=Gastrobar%20Fusion&imagem=https://images.unsplash.com/photo-1558028023-1989e72878ed?q=80&w=1372&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&id=9" class="reservation-link" data-local="Gastrobar Fusion">Reservar</a></p>
                         </div>
                     </div>
                     <div class="box">
@@ -218,7 +216,7 @@
                             <img src="https://images.unsplash.com/photo-1666307588778-6f0b349bd517?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NjB8fHJlc3RhdXJhbnRlJTIwYmFyfGVufDB8fDB8fHww" alt="Descrição da imagem">
                             <h3>Gastrobar Vintage</h3>
                             <span>Explore o charme e o sabor de décadas passadas no nosso Gastrobar Vintage, onde coquetéis clássicos e pratos tradicionais se unem em uma atmosfera nostálgica e acolhedora.</span>
-                           <p> <a href="paginaReservar.jsp?local=Gastrobar%20Vintage&imagem=https://images.unsplash.com/photo-1666307588778-6f0b349bd517?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NjB8fHJlc3RhdXJhbnRlJTIwYmFyfGVufDB8fDB8fHww" class="reservation-link" data-local="Gastrobar Vintage">Reservar</a></p>
+                           <p> <a href="paginaReservar.jsp?local=Gastrobar%20Vintage&imagem=https://images.unsplash.com/photo-1666307588778-6f0b349bd517?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NjB8fHJlc3RhdXJhbnRlJTIwYmFyfGVufDB8fDB8fHww&id=10" class="reservation-link" data-local="Gastrobar Vintage">Reservar</a></p>
                         </div>
                     </div>
                     <div class="box">
@@ -227,7 +225,7 @@
                             <img src="https://images.unsplash.com/photo-1481833761820-0509d3217039?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Descrição da imagem">
                             <h3> Relax Gastrobar</h3>
                             <span>Desfrute de uma experiência gastronômica tranquila e relaxante no nosso Relax Gastrobar, onde pratos leves e refrescantes se combinam com coquetéis artesanais em um ambiente sereno</span>
-                           <p> <a href="paginaReservar.jsp?local=Relax%20Gastrobar&imagem=https://images.unsplash.com/photo-1481833761820-0509d3217039?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="reservation-link" data-local="Relax Gastrobar">Reservar</a></p>
+                           <p> <a href="paginaReservar.jsp?local=Relax%20Gastrobar&imagem=https://images.unsplash.com/photo-1481833761820-0509d3217039?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&id=11" class="reservation-link" data-local="Relax Gastrobar">Reservar</a></p>
                         </div>
                     </div>
                     <div class="box">
@@ -236,7 +234,7 @@
                             <img src="https://images.unsplash.com/photo-1514933651103-005eec06c04b?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8cmVzdGF1cmFudGUlMjBiYXJ8ZW58MHx8MHx8fDA%3D" alt="Descrição da imagem">
                             <h3>Urbano Gastrobar</h3>
                             <span>Saboreie uma fusão vibrante de gastronomia urbana no nosso Urbano Gastrobar, onde pratos contemporâneos e coquetéis modernos se encontram em um ambiente dinâmico e cosmopolita.</span>
-                            <p> <a href="paginaReservar.jsp?local=Urbano%20Gatrobar&imagem=https://images.unsplash.com/photo-1514933651103-005eec06c04b?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8cmVzdGF1cmFudGUlMjBiYXJ8ZW58MHx8MHx8fDA%3D" class="reservation-link" ">Reservar</a></p>
+                            <p> <a href="paginaReservar.jsp?local=Urbano%20Gatrobar&imagem=https://images.unsplash.com/photo-1514933651103-005eec06c04b?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8cmVzdGF1cmFudGUlMjBiYXJ8ZW58MHx8MHx8fDA%3D&id=12" class="reservation-link" ">Reservar</a></p>
                         </div>
                     </div>
                 </div>

@@ -107,3 +107,161 @@ INSERT INTO estabelecimentos (nome_estabelecimento, tipo_estabelecimento) VALUES
 ('Relax Gastrobar', 'gastrobar'),
 ('Urbano Gastrobar', 'gastrobar');
 
+INSERT INTO cardapios (id_estabelecimento, nome_prato, descricao, preco, categoria) VALUES
+(1, 'Croque Monsieur', 'Sanduíche grelhado com presunto e queijo.', 12.50, 'prato principal'),
+(1, 'Quiche Lorraine', 'Torta salgada com recheio de bacon e queijo.', 14.00, 'prato principal'),
+(1, 'Salada de Frango', 'Frango grelhado com mix de folhas.', 10.50, 'prato principal'),
+(1, 'Tarte Tatin', 'Torta de maçã caramelizada.', 8.00, 'sobremesa'),
+(1, 'Macaron', 'Doce francês leve e crocante.', 6.50, 'sobremesa'),
+(1, 'Crème Brûlée', 'Sobremesa cremosa com casca crocante de açúcar.', 9.00, 'sobremesa'),
+(1, 'Sopa de Cebola', 'Sopa tradicional francesa.', 7.00, 'entrada'),
+(1, 'Salada Caprese', 'Tomate, mozzarella e manjericão.', 8.50, 'entrada'),
+(1, 'Tábua de Queijos', 'Seleção de queijos franceses.', 15.00, 'entrada'),
+(1, 'Café Espresso', 'Café puro e forte.', 3.50, 'bebida'),
+(1, 'Cappuccino', 'Café com leite vaporizado.', 5.00, 'bebida'),
+(1, 'Chá Gelado', 'Chá preto gelado com limão.', 4.00, 'bebida');
+
+INSERT INTO cardapios (id_estabelecimento, nome_prato, descricao, preco, categoria) VALUES
+(2, 'Croissant', 'Massa folhada com manteiga.', 8.00, 'prato principal'),
+(2, 'Torrada Francesa', 'Pão dourado com xarope de bordo.', 9.50, 'prato principal'),
+(2, 'Sanduíche de Peru', 'Sanduíche com peito de peru e queijo brie.', 11.00, 'prato principal'),
+(2, 'Éclair', 'Doce recheado com creme e cobertura de chocolate.', 6.00, 'sobremesa'),
+(2, 'Tartelette de Limão', 'Torta pequena de limão.', 7.00, 'sobremesa'),
+(2, 'Fondant de Chocolate', 'Bolo quente de chocolate.', 8.50, 'sobremesa'),
+(2, 'Salada Verde', 'Mix de folhas com molho vinagrete.', 5.50, 'entrada'),
+(2, 'Queijo Brie com Mel', 'Queijo brie derretido com mel.', 9.00, 'entrada'),
+(2, 'Sopa de Tomate', 'Sopa cremosa de tomate.', 7.00, 'entrada'),
+(2, 'Latte', 'Café com leite vaporizado.', 4.50, 'bebida'),
+(2, 'Mocha', 'Café com chocolate e chantilly.', 6.00, 'bebida'),
+(2, 'Chá Verde', 'Chá verde orgânico.', 3.50, 'bebida');
+
+INSERT INTO cardapios (id_estabelecimento, nome_prato, descricao, preco, categoria) VALUES
+(3, 'Baguete com Presunto', 'Sanduíche de baguete com presunto e queijo.', 9.00, 'prato principal'),
+(3, 'Omelete de Queijo', 'Omelete recheado com queijo suíço.', 10.50, 'prato principal'),
+(3, 'Salada Niçoise', 'Salada com atum, ovos e vegetais.', 11.00, 'prato principal'),
+(3, 'Mille-feuille', 'Camadas de massa folhada com creme.', 7.50, 'sobremesa'),
+(3, 'Tarte de Frutas', 'Torta recheada com frutas frescas.', 7.00, 'sobremesa'),
+(3, 'Clafoutis', 'Sobremesa tradicional francesa com cerejas.', 8.00, 'sobremesa'),
+(3, 'Bruschetta de Tomate', 'Pão com tomate e azeite.', 6.50, 'entrada'),
+(3, 'Mini Croissant', 'Pequenos croissants amanteigados.', 5.00, 'entrada'),
+(3, 'Queijo de Cabra com Nozes', 'Queijo de cabra com nozes e mel.', 10.50, 'entrada'),
+(3, 'Café Americano', 'Café preto mais suave.', 3.00, 'bebida'),
+(3, 'Chocolate Quente', 'Chocolate quente cremoso.', 5.50, 'bebida'),
+(3, 'Chá de Hortelã', 'Chá de hortelã refrescante.', 4.00, 'bebida');
+
+INSERT INTO cardapios (id_estabelecimento, nome_prato, descricao, preco, categoria) VALUES
+(4, 'Sanduíche de Atum', 'Sanduíche com atum e maionese.', 8.50, 'prato principal'),
+(4, 'Salada Caesar', 'Salada com frango grelhado e croutons.', 9.50, 'prato principal'),
+(4, 'Crepe de Queijo', 'Crepe recheado com queijo e presunto.', 9.00, 'prato principal'),
+(4, 'Brownie', 'Bolo de chocolate com nozes.', 7.00, 'sobremesa'),
+(4, 'Sorvete de Baunilha', 'Sorvete artesanal de baunilha.', 6.50, 'sobremesa'),
+(4, 'Panqueca com Frutas', 'Panquecas servidas com frutas frescas.', 8.00, 'sobremesa'),
+(4, 'Tábua de Embutidos', 'Seleção de embutidos.', 12.00, 'entrada'),
+(4, 'Salada de Pepino', 'Salada fresca de pepino.', 6.00, 'entrada'),
+(4, 'Pão de Alho', 'Pão torrado com manteiga de alho.', 5.50, 'entrada'),
+(4, 'Suco de Laranja', 'Suco natural de laranja.', 4.00, 'bebida'),
+(4, 'Frappuccino', 'Café gelado com creme.', 6.00, 'bebida'),
+(4, 'Chá de Camomila', 'Chá calmante de camomila.', 3.50, 'bebida');
+
+INSERT INTO cardapios (id_estabelecimento, nome_prato, descricao, preco, categoria) VALUES
+(5, 'Filé Mignon ao Molho Madeira', 'Filé mignon grelhado com molho madeira e purê de batatas.', 45.00, 'prato principal'),
+(5, 'Bacalhau à Portuguesa', 'Bacalhau com batatas, cebolas e ovos.', 50.00, 'prato principal'),
+(5, 'Risoto de Aspargos', 'Risoto cremoso com aspargos frescos.', 35.00, 'prato principal'),
+(5, 'Petit Gâteau', 'Bolo de chocolate quente com sorvete de baunilha.', 15.00, 'sobremesa'),
+(5, 'Mousse de Morango', 'Mousse de morango com calda de frutas vermelhas.', 12.00, 'sobremesa'),
+(5, 'Carpaccio de Salmão', 'Salmão cru fatiado com molho de alcaparras.', 18.00, 'entrada'),
+(5, 'Sopa de Cogumelos', 'Sopa cremosa de cogumelos.', 10.00, 'entrada'),
+(5, 'Tábua de Pães e Patês', 'Seleção de pães artesanais e patês.', 20.00, 'entrada'),
+(5, 'Espresso Duplo', 'Café forte e intenso.', 4.00, 'bebida'),
+(5, 'Suco Detox', 'Suco verde com couve, limão e gengibre.', 6.50, 'bebida'),
+(5, 'Chá de Ervas', 'Chá de ervas aromáticas.', 5.00, 'bebida');
+
+INSERT INTO cardapios (id_estabelecimento, nome_prato, descricao, preco, categoria) VALUES
+(6, 'Peixe Grelhado', 'Peixe grelhado com legumes salteados.', 40.00, 'prato principal'),
+(6, 'Paella de Frutos do Mar', 'Arroz com mariscos, camarões e lulas.', 55.00, 'prato principal'),
+(6, 'Ravioli de Ricota e Espinafre', 'Massa recheada com ricota e espinafre ao molho branco.', 38.00, 'prato principal'),
+(6, 'Pudim de Leite', 'Pudim cremoso de leite condensado.', 10.00, 'sobremesa'),
+(6, 'Tiramisu', 'Sobremesa italiana com café e mascarpone.', 14.00, 'sobremesa'),
+(6, 'Bruschetta de Salmão Defumado', 'Pão italiano com salmão defumado.', 16.00, 'entrada'),
+(6, 'Salada de Frutos do Mar', 'Mix de folhas com mariscos frescos.', 18.00, 'entrada'),
+(6, 'Queijo Coalho com Mel', 'Queijo coalho grelhado servido com mel.', 12.00, 'entrada'),
+(6, 'Espumante Brut', 'Espumante seco ideal para aperitivos.', 20.00, 'bebida'),
+(6, 'Suco de Coco', 'Suco natural de coco.', 5.00, 'bebida'),
+(6, 'Café Gelado', 'Café gelado refrescante.', 6.00, 'bebida');
+
+INSERT INTO cardapios (id_estabelecimento, nome_prato, descricao, preco, categoria) VALUES
+(7, 'Medalhão de Carne', 'Carne ao ponto com batatas rústicas.', 42.00, 'prato principal'),
+(7, 'Fettuccine Alfredo', 'Massa com molho cremoso de queijo.', 30.00, 'prato principal'),
+(7, 'Camarão na Moranga', 'Camarão servido dentro de uma moranga.', 48.00, 'prato principal'),
+(7, 'Profiteroles', 'Carolina recheada com sorvete e calda de chocolate.', 14.00, 'sobremesa'),
+(7, 'Sorvete Artesanal', 'Sorvete artesanal de frutas tropicais.', 8.00, 'sobremesa'),
+(7, 'Ceviche Tropical', 'Ceviche de peixe branco com manga.', 15.00, 'entrada'),
+(7, 'Bolinho de Bacalhau', 'Bolinho crocante de bacalhau.', 12.00, 'entrada'),
+(7, 'Caprese com Pesto', 'Salada caprese com molho pesto.', 10.00, 'entrada'),
+(7, 'Gin Tônica', 'Gin com água tônica e limão.', 16.00, 'bebida'),
+(7, 'Suco de Abacaxi com Hortelã', 'Suco natural de abacaxi e hortelã.', 5.50, 'bebida'),
+(7, 'Café com Leite', 'Café com leite vaporizado.', 4.50, 'bebida');
+
+INSERT INTO cardapios (id_estabelecimento, nome_prato, descricao, preco, categoria) VALUES
+(8, 'Moqueca de Peixe', 'Peixe cozido em molho de dendê e leite de coco.', 60.00, 'prato principal'),
+(8, 'Espaguete ao Pesto', 'Massa ao molho pesto com manjericão.', 35.00, 'prato principal'),
+(8, 'Costela Suína', 'Costela suína assada com molho barbecue.', 55.00, 'prato principal'),
+(8, 'Sorbet de Limão', 'Sobremesa gelada de limão.', 10.00, 'sobremesa'),
+(8, 'Mousse de Chocolate', 'Mousse de chocolate ao leite.', 12.00, 'sobremesa'),
+(8, 'Antepasto de Berinjela', 'Berinjela marinada em azeite.', 8.00, 'entrada'),
+(8, 'Salada de Grão-de-Bico', 'Grão-de-bico com legumes frescos.', 9.00, 'entrada'),
+(8, 'Espetinho de Camarão', 'Camarões grelhados no espeto.', 18.00, 'entrada'),
+(8, 'Caipiroska de Morango', 'Vodka com morango e açúcar.', 15.00, 'bebida'),
+(8, 'Refrigerante Artesanal', 'Refrigerante de frutas cítricas.', 5.50, 'bebida'),
+(8, 'Chá Mate', 'Chá mate gelado com limão.', 4.00, 'bebida');
+
+
+INSERT INTO cardapios (id_estabelecimento, nome_prato, descricao, preco, categoria) VALUES
+(9, 'Tábua de Frios', 'Seleção de queijos e embutidos.', 35.00, 'entrada'),
+(9, 'Mini Burguer Gourmet', 'Mini hambúrguer com queijo e molho especial.', 18.00, 'prato principal'),
+(9, 'Risoto de Funghi', 'Arroz arbóreo com cogumelos e parmesão.', 22.00, 'prato principal'),
+(9, 'Brownie com Sorvete', 'Brownie de chocolate com sorvete.', 12.00, 'sobremesa'),
+(9, 'Cheesecake de Frutas Vermelhas', 'Bolo de queijo com calda de frutas.', 10.00, 'sobremesa'),
+(9, 'Pão de Alho', 'Pão caseiro com manteiga de alho.', 8.00, 'entrada'),
+(9, 'Ceviche de Salmão', 'Salmão fresco marinado com limão e cebola roxa.', 15.00, 'entrada'),
+(9, 'Cocktail de Camarão', 'Camarão servido com molho de coquetel.', 20.00, 'entrada'),
+(9, 'Caipirinha de Limão', 'Cachaça, limão e açúcar.', 10.00, 'bebida'),
+(9, 'Cerveja Artesanal Local', 'Cerveja feita com ingredientes locais.', 12.00, 'bebida'),
+(9, 'Vinho Tinto', 'Vinho tinto da casa.', 14.00, 'bebida');
+
+INSERT INTO cardapios (id_estabelecimento, nome_prato, descricao, preco, categoria) VALUES
+(10, 'Bolinho de Carne Seca', 'Bolinho crocante recheado com carne seca e queijo coalho.', 18.00, 'entrada'),
+(10, 'Dadinho de Tapioca', 'Cubos de tapioca com queijo, servidos com melado.', 15.00, 'entrada'),
+(10, 'Costela no Barbecue', 'Costela suína com molho barbecue caseiro.', 35.00, 'prato principal'),
+(10, 'Hambúrguer Artesanal', 'Pão brioche, hambúrguer de 200g, cheddar e cebola caramelizada.', 28.00, 'prato principal'),
+(10, 'Tacos de Peixe', 'Tacos com peixe empanado, guacamole e sour cream.', 22.00, 'prato principal'),
+(10, 'Churros com Doce de Leite', 'Churros recheados de doce de leite.', 12.00, 'sobremesa'),
+(10, 'Brownie com Sorvete', 'Brownie de chocolate com sorvete de creme.', 14.00, 'sobremesa'),
+(10, 'Margarita Clássica', 'Tequila, suco de limão e licor de laranja.', 18.00, 'bebida'),
+(10, 'Mojito de Abacaxi', 'Rum, hortelã, abacaxi e água com gás.', 17.00, 'bebida'),
+(10, 'Caipirinha de Frutas Vermelhas', 'Cachaça com mix de frutas vermelhas e açúcar.', 16.00, 'bebida');
+
+INSERT INTO cardapios (id_estabelecimento, nome_prato, descricao, preco, categoria) VALUES
+(11, 'Croquete de Costela', 'Croquete de costela desfiada com molho especial.', 20.00, 'entrada'),
+(11, 'Ceviche de Tilápia', 'Peixe fresco marinado em limão e pimenta.', 22.00, 'entrada'),
+(11, 'Bife Ancho com Chimichurri', 'Corte argentino de bife com molho chimichurri.', 45.00, 'prato principal'),
+(11, 'Spaghetti à Carbonara', 'Massa com bacon, ovo e queijo parmesão.', 30.00, 'prato principal'),
+(11, 'Tábua de Queijos e Embutidos', 'Seleção de queijos e embutidos artesanais.', 40.00, 'prato principal'),
+(11, 'Cheesecake de Frutas Vermelhas', 'Cheesecake cremoso com calda de frutas vermelhas.', 15.00, 'sobremesa'),
+(11, 'Sorbet de Maracujá', 'Sorbet artesanal de maracujá.', 10.00, 'sobremesa'),
+(11, 'Gin Tropical', 'Gin com mix de frutas tropicais e água tônica.', 19.00, 'bebida'),
+(11, 'Negroni Clássico', 'Gin, vermute e Campari.', 20.00, 'bebida'),
+(11, 'Spritz Aperol', 'Aperol, prosecco e água com gás.', 18.00, 'bebida');
+
+INSERT INTO cardapios (id_estabelecimento, nome_prato, descricao, preco, categoria) VALUES
+(12, 'Pastel de Queijo Brie', 'Pastel crocante recheado com queijo brie e geleia de pimenta.', 18.00, 'entrada'),
+(12, 'Guacamole com Chips', 'Guacamole cremoso acompanhado de chips de milho.', 16.00, 'entrada'),
+(12, 'Picanha na Chapa', 'Picanha grelhada na chapa com mandioca frita.', 50.00, 'prato principal'),
+(12, 'Risoto de Funghi', 'Risoto cremoso de cogumelos frescos.', 38.00, 'prato principal'),
+(12, 'Polvo à Provençal', 'Tentáculos de polvo ao molho de alho e azeite.', 55.00, 'prato principal'),
+(12, 'Pavê de Limão', 'Pavê de limão siciliano com biscoitos amanteigados.', 12.00, 'sobremesa'),
+(12, 'Torta de Maçã', 'Torta de maçã com massa crocante e sorvete de baunilha.', 15.00, 'sobremesa'),
+(12, 'Cosmopolitan', 'Vodka, licor de laranja, suco de cranberry e limão.', 18.00, 'bebida'),
+(12, 'Whiskey Sour', 'Whiskey, suco de limão e açúcar.', 17.00, 'bebida'),
+(12, 'Caipiroska de Kiwi', 'Vodka, kiwi e açúcar.', 16.00, 'bebida');
+
