@@ -19,7 +19,7 @@ public class ManterCardapio extends DAO {
 
             while (rs.next()) {
                 Prato pratoEncontrado = new Prato();
-                pratoEncontrado.setIdPrato(rs.getInt("id_cardapio "));
+                pratoEncontrado.setIdPrato(rs.getInt("id_cardapio"));
                 pratoEncontrado.setNomePrato(rs.getString("nome_prato"));
                 pratoEncontrado.setDescricao(rs.getString("descricao"));
                 pratoEncontrado.setPreco(rs.getDouble("preco"));

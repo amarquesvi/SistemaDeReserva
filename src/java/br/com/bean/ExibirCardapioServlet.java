@@ -10,7 +10,6 @@ import jakarta.servlet.RequestDispatcher;
 import java.io.IOException;
 import java.io.PrintWriter;
 import jakarta.servlet.ServletException;
-import jakarta.servlet.annotation.WebServlet;
 import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
@@ -18,14 +17,13 @@ import java.util.ArrayList;
 
 /**
  *
- * @author fabri
+ * @author user
  */
-@WebServlet(name = "ExibirCardapioServlet1", urlPatterns = {"/ExibirCardapio.do"})
 public class ExibirCardapioServlet extends HttpServlet {
 
     /**
      * Processes requests for both HTTP <code>GET</code> and <code>POST</code>
-     * methods. 
+     * methods.
      *
      * @param request servlet request
      * @param response servlet response
@@ -36,6 +34,8 @@ public class ExibirCardapioServlet extends HttpServlet {
             throws ServletException, IOException {
         response.setContentType("text/html;charset=UTF-8");
         try (PrintWriter out = response.getWriter()) {
+            
+            
             String idEstabelecimentoStr = request.getParameter("id");
 
             if (idEstabelecimentoStr != null && !idEstabelecimentoStr.isEmpty()) {
@@ -52,6 +52,25 @@ public class ExibirCardapioServlet extends HttpServlet {
 
             RequestDispatcher dispatcher = request.getRequestDispatcher("paginaCardapio.jsp");
             dispatcher.forward(request, response);
+        
+    
+
+            
+            
+            
+            
+            
+            
+            /* TODO output your page here. You may use following sample code. */
+            out.println("<!DOCTYPE html>");
+            out.println("<html>");
+            out.println("<head>");
+            out.println("<title>Servlet ExibirCardapioServlet</title>");            
+            out.println("</head>");
+            out.println("<body>");
+            out.println("<h1>Servlet ExibirCardapioServlet at " + request.getContextPath() + "</h1>");
+            out.println("</body>");
+            out.println("</html>");
         }
     }
 

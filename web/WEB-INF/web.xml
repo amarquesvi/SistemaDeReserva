@@ -32,6 +32,10 @@
         <servlet-name>ExcluirReservaServlet</servlet-name>
         <servlet-class>br.com.bean.ExcluirReservaServlet</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>ExibirCardapioServlet</servlet-name>
+        <servlet-class>br.com.bean.ExibirCardapioServlet</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>CadastrosServlet</servlet-name>
         <url-pattern>/cscadastros.do</url-pattern>
@@ -63,5 +67,9 @@
     <servlet-mapping>
         <servlet-name>ExcluirReservaServlet</servlet-name>
         <url-pattern>/excluir.do</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ExibirCardapioServlet</servlet-name>
+        <url-pattern>/ExibirCardapio.do</url-pattern>
     </servlet-mapping>
 </web-app>

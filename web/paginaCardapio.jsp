@@ -7,7 +7,7 @@
 <%@page import="br.com.controle.Prato"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <%@page import="java.util.List"%>
-<%@page import="br.com.controle.Prato"%> 
+
 <!DOCTYPE html>
 <html>
     <head>
