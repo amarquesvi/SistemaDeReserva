@@ -1,0 +1,135 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : 31 de out. de 2024, 10:55:43
+    Author     : user
+*/
+
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : 7 de out. de 2024, 16:45:48
+    Author     : user
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    scroll-padding-top: 4rem;
+    scroll-behavior: smooth;
+    list-style: none;
+    text-decoration: none;
+}
+
+
+/* Variáveis */
+:root {
+    --main-color: #bc9667;
+    --second-color: #edeae3;
+    --text-color: #1b1b1b;
+    --bg-color: #fff;
+}
+
+body {
+    color: var(--text-color);
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 100px;
+    transition: 0.5s linear;
+    background: var(--text-color);
+}
+
+.container {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.menu a {
+    padding: 8px 17px;
+    color: var(--bg-color);
+    font-size: 1rem;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+/* Ajustar o contêiner para exibir as caixas lado a lado */
+.products-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px; /* Espaçamento entre as caixas */
+    padding: 20px;
+    margin-top: 80px; /* Espaço entre o navbar e as caixas */
+}
+
+/* Ajustar as caixas para um tamanho mais uniforme */
+.products-container .box {
+    position: relative;
+    width: 280px; /* Largura uniforme para todas as caixas */
+    height: 350px; /* Altura fixa para todas as caixas */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
+    border: 1px solid #ccc;
+    margin: 10px 0;
+    overflow: hidden; /* Evita que conteúdo extra ultrapasse os limites da caixa */
+}
+
+/* Ajuste na imagem */
+.products-container .box img {
+    width: 100%;
+    height: 200px; /* Altura fixa para todas as imagens */
+    object-fit: cover; /* Faz a imagem se ajustar proporcionalmente ao espaço da caixa */
+    border-radius: 0.5rem 0.5rem 0 0;
+}
+
+/* Ajustar conteúdo das caixas */
+.products-container .box .box-content {
+    padding: 20px;
+    text-align: center; /* Centraliza o conteúdo da caixa */
+    flex-grow: 1; /* Permite que o conteúdo se expanda para preencher o espaço restante */
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.products-container .box h3 {
+    margin: 10px 0;
+    font-size: 1rem; /* Ajuste de tamanho do título */
+    color: var(--text-color);
+}
+
+.products-container .box span {
+    color: #666;
+    font-size: 0.85rem; /* Ajuste no tamanho da descrição */
+}
+
+.products-container .box a:hover {
+    background-color: #936c49;
+}
